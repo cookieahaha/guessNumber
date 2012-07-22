@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GuessNumber</string>
+    <string name="edit_guess">enter the number here</string>
+    <string name="button_send">Guess</string>
+</resources>
