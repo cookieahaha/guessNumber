@@ -8,17 +8,18 @@
     android:layout_width="fill_parent"
     android:layout_height="0dp"
     android:layout_weight="1"
-    android:inputType="number" />
+    android:singleLine="false" />
 
    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="horizontal"
         android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" >
+        android:layout_height="wrap_content" >
 
     <EditText android:id="@+id/guess"
-      android:layout_width="wrap_content" 
+      android:layout_width="0dp" 
+      android:layout_weight="1"
       android:layout_height="wrap_content"
+      android:inputType="number"
       android:hint="@string/edit_guess"  />
 
     <Button android:id="@+id/button"
@@ -28,6 +29,75 @@
         android:onClick="guess" /> 
   </LinearLayout>
 
+  <GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:useDefaultMargins="true"
+        android:alignmentMode="alignBounds"
+        android:columnOrderPreserved="false"
+        android:columnCount="6" >
+    <Button android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:onClick="numberEntered" /> 
+    <Button android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:onClick="numberEntered" /> 
+    <Button android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:onClick="numberEntered" /> 
+    <Button android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:onClick="numberEntered" /> 
+    <Button android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:onClick="numberEntered" /> 
+    <Button android:id="@+id/button_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:onClick="numberEntered" /> 
+    <Button android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:onClick="numberEntered" /> 
+    <Button android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:onClick="numberEntered" /> 
+    <Button android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:onClick="numberEntered" /> 
+    <Button android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:onClick="numberEntered" /> 
+    <Button android:id="@+id/button0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:onClick="numberEntered" /> 
+    <Button android:id="@+id/button_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:onClick="numberEntered" /> 
+  </GridLayout>
 
 </LinearLayout>
 
